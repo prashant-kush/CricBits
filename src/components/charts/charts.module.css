@@ -1,0 +1,10 @@
+.container {
+  width: 32rem;
+  /* height: 35rem; */
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.canvas_line_chart {
+  background-color: white;
+  border-radius: 0.5rem;
+}

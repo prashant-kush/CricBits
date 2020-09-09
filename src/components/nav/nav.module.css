@@ -1,0 +1,20 @@
+.nav_parent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #19398a;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+.logo {
+  width: 6rem;
+}
+.h1 {
+  color: white;
+  font-size: 1rem;
+}

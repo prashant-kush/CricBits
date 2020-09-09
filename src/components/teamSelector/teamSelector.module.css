@@ -1,0 +1,83 @@
+.parent {
+  width: 20rem;
+  height: 38rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.upper_container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.h2 {
+  font-size: 1rem;
+}
+.team_ul {
+  width: 100%;
+  height: 80%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  overflow-y: scroll;
+}
+.team_heading {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.team_li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  /* transition: all 0.3s; */
+}
+.team_li:hover {
+  border: 0.01rem solid #6c6c6c;
+}
+.h3 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+.team_h3,
+.team_h3_win {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+.team_h3_win {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 800;
+}
