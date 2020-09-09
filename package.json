@@ -2,7 +2,7 @@
   "name": "atlan-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://prashant-kush.github.io/cric-bits",
+  "homepage": "http://prashant-kush.github.io/CricBits",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
