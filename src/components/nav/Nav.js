@@ -8,8 +8,12 @@ const Nav = () => {
   const ipl_data = useData();
   return (
     <nav className={styles.nav_parent}>
-      <Logo className={styles.logo} />
-      <h1 className={styles.h1}>{ipl_data.team}</h1>
+      <Logo
+        className={styles.logo}
+        onClick={() => ipl_data.setTeam("Overall")}
+      />
+      <h1 className={styles.h1}>IPL Stats</h1>
+      <h1 className={styles.h1_team}>{ipl_data.team}</h1>
     </nav>
   );
 };

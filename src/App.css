@@ -23,3 +23,10 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .app-space {
+    padding-right: 0.3rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}

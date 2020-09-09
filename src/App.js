@@ -6,11 +6,12 @@ import fetchCsvData from "./utils/fetchCsv";
 import Nav from "./components/nav/Nav";
 import TeamSelector from "./components/teamSelector/TeamSelector";
 import ChartSpace from "./components/chartSpace/ChartSpace";
+import OverAll from "./components/chartSpace/Overall";
 
 function App() {
   const [isDataLoaded, changeIsDataLoaded] = useState(false);
   const [data, changeData] = useState([]);
-  const [team, changeTeam] = useState("Mumbai Indians");
+  const [team, changeTeam] = useState("Overall");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -48,7 +49,7 @@ function App() {
         <Nav />
         <div className="app-space">
           <TeamSelector />
-          <ChartSpace />
+          {team === "Overall" ? <OverAll /> : <ChartSpace />}
         </div>
       </div>
     </DataContext.Provider>

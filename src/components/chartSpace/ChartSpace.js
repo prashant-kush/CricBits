@@ -5,7 +5,7 @@ import Chart from "../charts/Chart";
 
 import { useData } from "../../context/context";
 
-const buildOptions = (title, scale) => {
+export const buildOptions = (title, scale) => {
   const bodyCSS = parseFloat(
     getComputedStyle(document.querySelector("body"))["font-size"]
   );
@@ -15,14 +15,14 @@ const buildOptions = (title, scale) => {
           yAxes: [
             {
               ticks: {
-                fontSize: bodyCSS,
+                fontSize: bodyCSS * 0.8,
               },
             },
           ],
           xAxes: [
             {
               ticks: {
-                fontSize: bodyCSS,
+                fontSize: bodyCSS * 0.8,
               },
             },
           ],
@@ -31,9 +31,9 @@ const buildOptions = (title, scale) => {
     title: {
       display: true,
       text: title,
-      fontSize: "22",
+      fontSize: bodyCSS,
     },
-    legend: { display: true, labels: { fontSize: bodyCSS } },
+    legend: { display: true, labels: { fontSize: bodyCSS * 0.8 } },
     responsive: true,
     maintainAspectRatio: true,
     animation: {
@@ -143,7 +143,7 @@ const ChartSpace = () => {
             },
           ],
         }}
-        options={buildOptions("Toss Results", true)}
+        options={buildOptions("Toss result per season", true)}
       />
       <Chart
         type="doughnut"
@@ -197,7 +197,7 @@ const ChartSpace = () => {
             },
           ],
         }}
-        options={{ ...buildOptions("win percentage"), cutoutPercentage: 65 }}
+        options={{ ...buildOptions("Win percentage"), cutoutPercentage: 65 }}
       />
       <Chart
         type="line"
