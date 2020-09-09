@@ -33,7 +33,7 @@ function App() {
         });
         data.data.pop();
         changeData(data.data);
-        console.log(data.data);
+        console.log(data);
       });
       changeIsDataLoaded(true);
     };
