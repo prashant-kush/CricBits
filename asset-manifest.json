@@ -1,0 +1,42 @@
+{
+  "files": {
+    "static/js/0.8b673d91.chunk.js": "/cric-bits/static/js/0.8b673d91.chunk.js",
+    "static/js/0.8b673d91.chunk.js.map": "/cric-bits/static/js/0.8b673d91.chunk.js.map",
+    "main.css": "/cric-bits/static/css/main.16bdd15c.chunk.css",
+    "main.js": "/cric-bits/static/js/main.d8d8aea6.chunk.js",
+    "main.js.map": "/cric-bits/static/js/main.d8d8aea6.chunk.js.map",
+    "runtime-main.js": "/cric-bits/static/js/runtime-main.f369728c.js",
+    "runtime-main.js.map": "/cric-bits/static/js/runtime-main.f369728c.js.map",
+    "static/js/3.df621b92.chunk.js": "/cric-bits/static/js/3.df621b92.chunk.js",
+    "static/js/3.df621b92.chunk.js.map": "/cric-bits/static/js/3.df621b92.chunk.js.map",
+    "static/css/4.690970d0.chunk.css": "/cric-bits/static/css/4.690970d0.chunk.css",
+    "static/js/4.0f6a8701.chunk.js": "/cric-bits/static/js/4.0f6a8701.chunk.js",
+    "static/js/4.0f6a8701.chunk.js.map": "/cric-bits/static/js/4.0f6a8701.chunk.js.map",
+    "static/css/5.690970d0.chunk.css": "/cric-bits/static/css/5.690970d0.chunk.css",
+    "static/js/5.77ba67be.chunk.js": "/cric-bits/static/js/5.77ba67be.chunk.js",
+    "static/js/5.77ba67be.chunk.js.map": "/cric-bits/static/js/5.77ba67be.chunk.js.map",
+    "static/css/6.4ffbe6bf.chunk.css": "/cric-bits/static/css/6.4ffbe6bf.chunk.css",
+    "static/js/6.4958b77e.chunk.js": "/cric-bits/static/js/6.4958b77e.chunk.js",
+    "static/js/6.4958b77e.chunk.js.map": "/cric-bits/static/js/6.4958b77e.chunk.js.map",
+    "static/css/7.1610f3b2.chunk.css": "/cric-bits/static/css/7.1610f3b2.chunk.css",
+    "static/js/7.3075134c.chunk.js": "/cric-bits/static/js/7.3075134c.chunk.js",
+    "static/js/7.3075134c.chunk.js.map": "/cric-bits/static/js/7.3075134c.chunk.js.map",
+    "index.html": "/cric-bits/index.html",
+    "precache-manifest.f34368cf4ad882592c1cf92161cd9d90.js": "/cric-bits/precache-manifest.f34368cf4ad882592c1cf92161cd9d90.js",
+    "service-worker.js": "/cric-bits/service-worker.js",
+    "static/css/4.690970d0.chunk.css.map": "/cric-bits/static/css/4.690970d0.chunk.css.map",
+    "static/css/5.690970d0.chunk.css.map": "/cric-bits/static/css/5.690970d0.chunk.css.map",
+    "static/css/6.4ffbe6bf.chunk.css.map": "/cric-bits/static/css/6.4ffbe6bf.chunk.css.map",
+    "static/css/7.1610f3b2.chunk.css.map": "/cric-bits/static/css/7.1610f3b2.chunk.css.map",
+    "static/css/main.16bdd15c.chunk.css.map": "/cric-bits/static/css/main.16bdd15c.chunk.css.map",
+    "static/js/0.8b673d91.chunk.js.LICENSE.txt": "/cric-bits/static/js/0.8b673d91.chunk.js.LICENSE.txt",
+    "static/js/3.df621b92.chunk.js.LICENSE.txt": "/cric-bits/static/js/3.df621b92.chunk.js.LICENSE.txt",
+    "static/media/Group 3.739b6ae9.svg": "/cric-bits/static/media/Group 3.739b6ae9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f369728c.js",
+    "static/js/3.df621b92.chunk.js",
+    "static/css/main.16bdd15c.chunk.css",
+    "static/js/main.d8d8aea6.chunk.js"
+  ]
+}
