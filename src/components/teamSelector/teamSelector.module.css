@@ -50,7 +50,8 @@
   padding-right: 1rem;
   box-sizing: border-box;
 }
-.team_li {
+.team_li,
+.team_li_active {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -63,8 +64,12 @@
   cursor: pointer;
   /* transition: all 0.3s; */
 }
+.team_li_active {
+  background-color: rgba(25, 57, 138, 0.1);
+}
 .team_li:hover {
   border: 0.01rem solid #6c6c6c;
+  background-color: rgba(25, 57, 138, 0.1);
 }
 .h3 {
   font-size: 0.7rem;

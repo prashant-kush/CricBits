@@ -61,7 +61,9 @@ const TeamSelector = () => {
           {teams.map((team) => (
             <li
               key={team.name}
-              className={styles.team_li}
+              className={
+                data.team === team.name ? styles.team_li_active : styles.team_li
+              }
               onClick={() => {
                 if (isMobile) burgerRef.current.checked = false;
                 data.setTeam(team.name);
