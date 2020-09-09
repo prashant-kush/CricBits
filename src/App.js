@@ -1,12 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import { DataContext } from "./context/context";
 import fetchCsvData from "./utils/fetchCsv";
+import Loader from "./components/loader/Loader";
 
-import Nav from "./components/nav/Nav";
-import TeamSelector from "./components/teamSelector/TeamSelector";
-import ChartSpace from "./components/chartSpace/ChartSpace";
-import OverAll from "./components/chartSpace/Overall";
+const Nav = React.lazy(() => import("./components/nav/Nav"));
+const TeamSelector = React.lazy(() =>
+  import("./components/teamSelector/TeamSelector")
+);
+const ChartSpace = React.lazy(() =>
+  import("./components/chartSpace/ChartSpace")
+);
+const OverAll = React.lazy(() => import("./components/chartSpace/Overall"));
 
 function App() {
   const [isDataLoaded, changeIsDataLoaded] = useState(false);
@@ -45,13 +50,30 @@ function App() {
         setTeam: (t) => changeTeam(t),
       }}
     >
-      <div className="App">
-        <Nav />
-        <div className="app-space">
-          <TeamSelector />
-          {team === "Overall" ? <OverAll /> : <ChartSpace />}
+      <Suspense
+        fallback={
+          <div
+            style={{
+              height: "100vh",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Loader />
+          </div>
+        }
+      >
+        <div className="App">
+          <Nav />
+          <div className="app-space">
+            <TeamSelector />
+            {team === "Overall" ? <OverAll /> : <ChartSpace />}
+          </div>
         </div>
-      </div>
+      </Suspense>
     </DataContext.Provider>
   );
 }

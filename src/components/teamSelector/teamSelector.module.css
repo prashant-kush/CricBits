@@ -100,8 +100,8 @@
   padding-left: 0.65rem;
   padding-right: 0.65rem;
   box-sizing: border-box;
-  left: 1rem;
-  top: 4rem;
+  left: 0.5rem;
+  top: 3.5rem;
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 50%;
