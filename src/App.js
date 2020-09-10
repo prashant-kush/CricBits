@@ -19,25 +19,31 @@ function App() {
   const [team, changeTeam] = useState("Overall");
 
   useEffect(() => {
-    const fetchData = async () => {
-      await fetchCsvData("/data/ipl_data.csv", (data) => {
-        data.data.forEach((match) => {
-          if (match.team1 === "Rising Pune Supergiant")
-            match.team1 = "Rising Pune Supergiants";
-          if (match.team2 === "Rising Pune Supergiant")
-            match.team2 = "Rising Pune Supergiants";
-          if (match.winner === "Rising Pune Supergiant")
-            match.winner = "Rising Pune Supergiants";
-          if (match.toss_winner === "Rising Pune Supergiant")
-            match.toss_winner = "Rising Pune Supergiants";
+    if (!localStorage.getItem("ipl_data")) {
+      const fetchData = async () => {
+        await fetchCsvData("/data/ipl_data.csv", (data) => {
+          data.data.forEach((match) => {
+            if (match.team1 === "Rising Pune Supergiant")
+              match.team1 = "Rising Pune Supergiants";
+            if (match.team2 === "Rising Pune Supergiant")
+              match.team2 = "Rising Pune Supergiants";
+            if (match.winner === "Rising Pune Supergiant")
+              match.winner = "Rising Pune Supergiants";
+            if (match.toss_winner === "Rising Pune Supergiant")
+              match.toss_winner = "Rising Pune Supergiants";
+          });
+          data.data.pop();
+          changeData(data.data);
+          localStorage.setItem("ipl_data", JSON.stringify(data.data));
+          console.log(data);
         });
-        data.data.pop();
-        changeData(data.data);
-        console.log(data);
-      });
+        changeIsDataLoaded(true);
+      };
+      fetchData();
+    } else {
+      changeData(JSON.parse(localStorage.getItem("ipl_data")));
       changeIsDataLoaded(true);
-    };
-    fetchData();
+    }
   }, []);
   return (
     <DataContext.Provider
