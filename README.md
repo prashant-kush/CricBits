@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CricBits ( IPL Statistics showing web app )
+### This webapp [https://cric-bits.vercel.app] is made for the task "Front End Engineer Challenge – IPL" for Atlan
 
-## Available Scripts
+### Live hosted link :- [https://cric-bits.vercel.app]
 
-In the project directory, you can run:
+## List of all major libraries used :-
+1. ReactJs (Frontend framework)
+2. Chart.js ( To draw relevant charts )
+3. papaparse (To parse CSV file into JS Array)
 
-### `yarn start`
+## List of all bonus points :-
+1. - [] Create the web app in vue.js :- I haven't followed this one as I am not familiar with this particular framework. But I have used ReactJs, and I am quite proficient in it.
+2. - [x] Optimize the loading time :- I have done it. I have tried to follow almost all the best practices. The contents fetched are Gzipped. There is code splitting done to prevent large js files from being fetched on the initial load. SSR (server-side rendering) can be done, but it would be an overkill.
+3. - [x] Make it mobile responsive :- It is mobile responsive. Works on all screen sizes. I have done it using "rem" as a measurement unit wherever possible and then added some media queries. Also used flexbox wherever possible.
+4. - [x] Make it a PWA :- It is a progressive web app (PWA). It is following all the norms needed by the browser to treat it as installable. All the meta and link tags are present with the manifest file and with all the icon sizes.  
+5. - [x] Make it offline usable :- It is full offline usable as it is not making any Http requests dynamically, and the browser caches all the assets (CSV file) as I have registered serviceWorker on it.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Functions of the webapp :-
+1. The web app shows a comparison and "Overall" stats for all the seasons and all the teams of IPL at first.
+2. Stats of individual team can be seen by clicking on the individual team names from the list shown at the left of the web app.
+3. "Overall" stats can be shown again by clicking on the "CricBits" logo.
