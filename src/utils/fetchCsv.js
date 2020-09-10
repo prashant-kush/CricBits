@@ -2,10 +2,11 @@ import Papa from "papaparse";
 
 const fetchCsv = (location) => {
   return fetch(location).then((response) => {
-    let reader = response.body.getReader();
-    let decoder = new TextDecoder("utf-8");
+    return response.blob();
+    // let reader = response.body.getReader();
+    // let decoder = new TextDecoder("utf-8");
 
-    return reader.read().then((result) => decoder.decode(result.value));
+    // return reader.read().then((result) => decoder.decode(result.value));
   });
 };
 
